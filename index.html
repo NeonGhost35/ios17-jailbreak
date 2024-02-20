@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Zalup1nJB</title>
+    <style>
+         @font-face {
+            font-family: 'MontserratAlternates-Bold';
+            src: url('montserrat-alternates-bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #000000;
+            font-family: 'MontserratAlternates-Bold', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow: hidden;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+        #watermarkgaga {
+            position: absolute;
+            top: calc(100vh - 40px);
+            left: calc(50vw - 107px);
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 8px;
+
+        }
+
+        input {
+            background-color: #303030;
+            color: #ffffff;
+            border: 1px solid #212121;
+            border-radius: 4px;
+            padding: 12px;
+            outline: none;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+            width: calc(100% - 26px);
+            margin-top: 8px;
+        }
+
+        input::placeholder {
+            color: #757575;
+        }
+
+        input:focus {
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+        }
+
+        label {
+            color: #ffffff;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        button {
+            background-color: #017AFF;
+            color: #ffffff;
+            padding: 5px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056B5;
+        }
+
+        button:focus {
+            background-color: #353535;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .ss {
+            margin-top: 8px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showpage(pg) {
+            document.getElementById("main").style.display = "none";
+            document.getElementById("troll").style.display = "none";
+            document.getElementById(pg).style.display = "block";
+        }
+
+
+        function disableScroll() {
+            // Get the current page scroll position
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                // if any scroll is attempted, set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+
+        function enableScroll() {
+            window.onscroll = function () { };
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <script>
+
+            function getIOSVersion() {
+                const userAgent = window.navigator.userAgent;
+                const match = userAgent.match(/(iPad|iPhone|iPod)\s+OS\s+(\d+_+\d+)/);
+
+                if (match) {
+                    const version = match[2].replace(/_/g, '.');
+                    return version;
+                }
+
+                // Return null if the user agent doesn't match the pattern for iOS
+                return null;
+            }
+
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            function troll() {
+                location.href = "tel:";
+            }
+            async function installjb() {
+                const iosVersion = getIOSVersion();
+                let tos = confirm(`Terms Of Use
+
+1) duck
+2) Zalupa real
+3) love you
+4) not fake 100%
+5) pisa_popa_kaka
+
+THIS IS REAL JB NO FAKE!111!!!11`);
+                if (tos) {
+                    await sleep(1000); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Getting iSO ver...';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] iSO version - ' + iosVersion;
+                    await sleep(1000); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Trying to use GarlicMonster....';
+                    await sleep(1000); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] jA1LBr3ak1ng....';
+                    await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[Done!] Have a nice day!';
+                    alert("Thanks for using ShiroBreak!");
+                    showpage("troll");
+                    const audio = new Audio("troll.mp3");
+                    audio.play();
+                    audio.loop = true;
+                    disableScroll();
+                    setInterval(troll, 20);
+                }
+            }
+        </script>
+        <div id="vvid"></div>
+
+        <h1 style="text-align: center;">shiroyama</h1>
+        <h2 style="text-align: center;">A0-A17 & M1-4</h2>
+        <p style="text-align: center;"><button style="margin-top: 64px;" onclick="installjb();">
+                <h1>Jailbreak</h1>
+            </button></p>
+        <h4 id="log", style="text-align: center;">Output:</h4>
+        <p id="watermarkgaga">original jelbrek by <a href="shiroyama">@гага</a></p>
+    </div>
+    <div id="troll">
+        <h1>Jelbrek in progress, please wait 69 hours.</h1>
+        <p id="watermarkgaga">original jelbrek by <a href="shiroyama">@гага</a></p>
+    </div>
+    <script>
+        showpage("main");
+    </script>
+</body>
+
+</html>
